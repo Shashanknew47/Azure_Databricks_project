@@ -3,7 +3,7 @@ Data Source: www.ergast.com/mrd
 
 
 #### Entity Relationship Model of Data Source
-![Data model](http://ergast.com/images/ergast_db.png)
+![Data model](https://github.com/Shashanknew47/Azure_Databricks_project/blob/master/Screentshots/Data_model.png)
 
 
 # Project Requirement:

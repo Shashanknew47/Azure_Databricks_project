@@ -36,6 +36,21 @@ Data Source: www.ergast.com/mrd
   
             
 # Project Architecture:
+   1) Created Storage account `formularacedata`.
+   2) Created 3 containers in `formularacedata` account.
+       - Raw
+       - Processed
+       - Presentation
+   3) Created Service principal and provide 'read and list' permission
+   4) Store service principal credentials in `Azure Key Vault`.
+   5) Mount all these containers in `Azure Databricks workspace`.
+   6) Collected all the raw data in `raw` container.
+   7) Process the data 'raw data' and optimize it with 'partition pruning' and 'run lenght length encoding'
+   8) Prepare the data in  `Delta Lake` format and created tables in 2 databases. So, that BI team can access this data for further analysis.
+         - f1_processes
+         - f1_presentation
+    
+   
 
   
       
